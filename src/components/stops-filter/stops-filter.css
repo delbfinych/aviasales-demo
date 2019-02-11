@@ -1,0 +1,58 @@
+.stops-filter label {
+  width: 100%;
+  display: inline-block;
+  padding: 5px 0;
+  margin: 0;
+  position: relative;
+}
+
+.stops-filter label input {
+  margin-left: 15%;
+  opacity: 0;
+}
+.stops-filter span {
+  user-select: none;
+}
+
+.stops-filter .amount {
+  display: block;
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+
+.stops-filter label:hover {
+  background-color: #f1fcff;
+}
+
+.stops-filter {
+  padding-bottom: 16px;
+}
+.stops-filter .checkbox:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -32px;
+  height: 19px;
+  width: 19px;
+  border: 1px solid #d2d5d6;
+  border-radius: 4px;
+}
+.stops-filter span {
+  position: relative;
+}
+.stops-filter input:checked + .checkbox:after {
+  content: "✔";
+  color: #2196f3;
+  position: absolute;
+  left: -28px;
+}
+.stops-filter input:checked + .checkbox:before {
+  border: 1px solid #2196f3;
+}
+
+.stops-filter .only {
+  opacity: 0;
+}
+.stops-filter label:hover .only {
+  opacity: 1;
+}

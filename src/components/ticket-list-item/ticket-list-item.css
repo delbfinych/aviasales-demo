@@ -1,0 +1,104 @@
+.ticket-list-item {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  max-width: 566px;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(91, 137, 164, 0.25);
+}
+@media screen and (max-width: 800px) {
+  .ticket-list-item {
+    flex-direction: column-reverse;
+  }
+}
+.ticket-list-item__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #eceff1;
+  padding: 20px;
+}
+.ticket-list-item__details {
+  width: 100%;
+  padding: 15px;
+}
+.buyBtn {
+  width: 160px;
+  height: 56px;
+  background-color: #ff6d00;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.buyBtn:hover {
+  background-color: #ff8124;
+}
+
+.buyBtn-text {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  font-size: 1rem;
+  line-height: 21px;
+}
+
+.ticket-list-item__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.ticket-list-item__destination {
+  text-align: right;
+}
+
+.ticket-list-item__origin,
+.ticket-list-item__destination {
+  display: flex;
+  flex-direction: column;
+}
+
+.time {
+  font-size: 2rem;
+}
+.name,
+.date {
+  font-size: 0.75rem;
+}
+
+.ticket-list-item__stops {
+  flex-grow: 1;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-size: 0.62rem;
+  border-bottom: 1px solid #d2d5d6;
+  padding-bottom: 1px;
+}
+
+.ticket-list-item__stops span {
+  display: block;
+  position: relative;
+}
+.ticket-list-item__stops span:after {
+  content: "✈";
+  color: #d2d5d6;
+  position: absolute;
+  top: 53%;
+  right: 0;
+}
+@media screen and (max-width: 585px) {
+  .ticket-list-item {
+    margin: 20px 20px;
+  }
+}
+@media screen and (max-width: 585px) {
+  .buyBtn {
+    width: 100%;
+  }
+}

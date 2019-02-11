@@ -1,0 +1,43 @@
+.currency-filter {
+  margin: 16px;
+}
+
+.filter {
+  background-color: white;
+  border-radius: 4px;
+  display: inline-block;
+}
+.currency-filter span,
+.filterBtn {
+  text-transform: uppercase;
+}
+
+.currency-filter span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.btn {
+  border: 1px solid #d2d5d6;
+  color: #64b5f5;
+}
+.active {
+  color: white;
+  background-color: #2196f3;
+  border: 1px solid #2196f3;
+}
+.active:hover {
+  color: white;
+}
+.btn:not(.active):hover {
+  background-color: #f2fcff;
+  border: 1px solid #64b5f5;
+  color: #64b5f5;
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-group {
+  width: 100%;
+}
